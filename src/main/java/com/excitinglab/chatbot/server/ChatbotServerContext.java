@@ -1,4 +1,4 @@
-package com.excitinglab.chatbot.engine;
+package com.excitinglab.chatbot.server;
 
 import com.excitinglab.chatbot.kakao.service.ChatRoomService;
 import com.excitinglab.chatbot.kakao.service.FriendService;
@@ -7,9 +7,9 @@ import com.excitinglab.chatbot.kakao.service.MessageService;
 
 import static spark.Spark.port;
 
-public class ChatbotEngineContext {
+public class ChatbotServerContext {
 
-  private final ChatbotEngineConfig config;
+  private final ChatbotServerConfig config;
 
   private final KeyboardService keyboardService;
 
@@ -19,7 +19,7 @@ public class ChatbotEngineContext {
 
   private final FriendService friendService;
 
-  public ChatbotEngineContext(ChatbotEngineConfig config) {
+  public ChatbotServerContext(ChatbotServerConfig config) {
     this.config = config;
 
     port(config.getHttpPort());
