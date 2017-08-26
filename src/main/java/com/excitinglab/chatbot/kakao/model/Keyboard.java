@@ -1,12 +1,11 @@
-package com.excitinglab.kakaobot.model;
+package com.excitinglab.chatbot.kakao.model;
 
 import java.util.Arrays;
 
-/**
- * Created by comchangs on 2017. 7. 1..
- */
-public class Keyboard  {
+public class Keyboard {
+
   private final String type;
+
   private final String[] buttons;
 
   public Keyboard(String type, String[] buttons) {

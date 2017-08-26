@@ -1,11 +1,14 @@
-package com.excitinglab.kakaobot.model;
+package com.excitinglab.chatbot.kakao.model;
 
 /**
  * Created by comchangs on 2017. 7. 1..
  */
 public class Photo {
+
   private final String url;
+
   private final int width;
+
   private final int height;
 
   public Photo(String url, int width, int height) {
@@ -35,4 +38,5 @@ public class Photo {
     sb.append('}');
     return sb.toString();
   }
+
 }

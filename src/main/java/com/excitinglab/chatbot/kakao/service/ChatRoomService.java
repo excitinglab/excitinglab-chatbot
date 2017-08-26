@@ -1,4 +1,4 @@
-package com.excitinglab.kakaobot.service;
+package com.excitinglab.chatbot.kakao.service;
 
 import spark.Request;
 import spark.Response;
@@ -10,6 +10,7 @@ import static spark.Spark.post;
  * Created by comchangs on 2017. 7. 1..
  */
 public class ChatRoomService {
+
   public ChatRoomService() {
     delete("/chat_room/:user_key", this::deleteResponse);
   }
@@ -18,4 +19,5 @@ public class ChatRoomService {
     String userKey = req.params("user_key");
     return "delete" + userKey;
   }
+
 }

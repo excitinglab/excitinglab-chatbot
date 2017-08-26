@@ -1,6 +1,5 @@
-package com.excitinglab.kakaobot.service;
+package com.excitinglab.chatbot.kakao.service;
 
-import com.excitinglab.kakaobot.model.Keyboard;
 import spark.Request;
 import spark.Response;
 
@@ -12,6 +11,7 @@ import static spark.Spark.post;
  * Created by comchangs on 2017. 7. 1..
  */
 public class FriendService {
+
   public FriendService() {
     post("/friend", this::postResponse);
     delete("/friend", this::deleteResponse);
@@ -26,4 +26,5 @@ public class FriendService {
     String userKey = req.params("user_key");
     return "delete" + userKey;
   }
+
 }

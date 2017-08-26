@@ -1,10 +1,9 @@
-package com.excitinglab.kakaobot.model;
+package com.excitinglab.chatbot.kakao.model;
 
-/**
- * Created by comchangs on 2017. 7. 1..
- */
 public class MessageButton {
+
   private final String label;
+
   private final String url;
 
   public MessageButton(String label, String url) {
@@ -28,4 +27,5 @@ public class MessageButton {
     sb.append('}');
     return sb.toString();
   }
+
 }

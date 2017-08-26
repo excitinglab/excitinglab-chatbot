@@ -1,15 +1,13 @@
-package com.excitinglab.kakaobot.service;
+package com.excitinglab.chatbot.kakao.service;
 
-import com.excitinglab.kakaobot.model.Message;
+import com.excitinglab.chatbot.kakao.model.Message;
 import spark.Request;
 import spark.Response;
 
 import static spark.Spark.get;
 
-/**
- * Created by comchangs on 2017. 7. 1..
- */
 public class MessageService {
+
   public MessageService() {
     get("/message", this::getResponse);
   }
@@ -20,4 +18,5 @@ public class MessageService {
     String content = req.params("content");
     return new Message(userKey + type + content).toString();
   }
+
 }

@@ -1,11 +1,14 @@
-package com.excitinglab.kakaobot.model;
+package com.excitinglab.chatbot.kakao.model;
 
 /**
  * Created by comchangs on 2017. 7. 1..
  */
 public class Message {
+
   private final String text;
+
   private final Photo photo;
+
   private final MessageButton message_button;
 
   public Message(String text) {
@@ -41,4 +44,5 @@ public class Message {
     sb.append('}');
     return sb.toString();
   }
+
 }
