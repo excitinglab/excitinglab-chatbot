@@ -1,6 +1,6 @@
 package com.excitinglab.chatbot;
 
-import com.excitinglab.chatbot.engine.ChatbotEngineServer;
+import com.excitinglab.chatbot.server.ChatbotServer;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
@@ -8,7 +8,7 @@ import junit.framework.TestSuite;
 /**
  * Unit test for simple App.
  */
-public class ChatbotEngineServerTest
+public class ChatbotServerTest
     extends TestCase
 {
     /**
@@ -16,7 +16,7 @@ public class ChatbotEngineServerTest
      *
      * @param testName name of the test case
      */
-    public ChatbotEngineServerTest(String testName )
+    public ChatbotServerTest(String testName )
     {
         super( testName );
     }
@@ -26,7 +26,7 @@ public class ChatbotEngineServerTest
      */
     public static Test suite()
     {
-        return new TestSuite( ChatbotEngineServer.class );
+        return new TestSuite( ChatbotServer.class );
     }
 
     /**
