@@ -1,1 +1,1 @@
-# excitinglab-kakao-bot
+# excitinglab-chatbot
